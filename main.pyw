@@ -4,6 +4,11 @@ import pyautogui
 import math
 import os
 
+try:
+   os.makedirs("mazes")
+except FileExistsError:
+   pass
+
 pyautogui.FAILSAFE = False
 os.environ['SDL_VIDEO_WINDOW_POS'] = "0,30"
 
